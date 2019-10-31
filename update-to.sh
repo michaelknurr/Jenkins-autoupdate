@@ -5,6 +5,7 @@ if [ $# != 1 ] ; then
         exit 1
 fi
 
+cd $(dirname $0)
 VERSION=$1
 
 if [ "$VERSION" == "latest" ] ; then        
