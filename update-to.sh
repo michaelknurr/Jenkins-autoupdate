@@ -19,7 +19,7 @@ if [ "$VERSION" == "latest" ] ; then
 
         # get the latest stable jenkins release
         rm -f jenkins.war
-        wget  wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+        wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
         LATEST_VERSION=$( java -jar jenkins.war --version );
         echo "Latest version: [$LATEST_VERSION]"
 
